@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RiskCube Institute — RCI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <header>
+
+  <nav>
+
+    <!-- Logo -->
+    <a href="#home" class="nav-logo" aria-label="RCI Home">
+      <img src="IDR-ICON-NO-BG.png" alt="RCI Logo" class="logo-icon">
+    <span>RiskCube<BR>INSTITUTE</span>
+    </a>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="closeNav()">Home</a></li>
+      <li><a href="#about" onclick="closeNav()">About</a></li>
+      <li><a href="#services" onclick="closeNav()">Services</a></li>
+      <li><a href="#community" onclick="closeNav()">Community</a></li>
+      <li><a href="#contact" class="nav-cta" onclick="closeNav()">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </nav>
+
+</header>
+ 
+  <main>
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-eyebrow"><span class="dot"></span><span>Industry-led · Academic-backed</span></div>
+            <h1>Advancing the<br><em>Future of</em><br>Digital Risk</h1>
+            <p class="hero-sub">RiskCube trains and deploys world-class digital risk practitioners through deep academic collaboration and real-world industry practice — bridging the gap between knowledge and deployment.</p>
+            <div class="hero-btns">
+              <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore Programs</button>
+              <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Talent</button>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item"><div class="stat-num">340+</div><div class="stat-label">Practitioners Trained</div></div>
+              <div class="stat-item"><div class="stat-num">18</div><div class="stat-label">Partner Universities</div></div>
+              <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Industry Sectors</div></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+            <div class="cube-scene">
+              <div class="cube">
+                <div class="cube-face front"></div><div class="cube-face back"></div>
+                <div class="cube-face left"></div><div class="cube-face right"></div>
+                <div class="cube-face top"></div><div class="cube-face bottom"></div>
+              </div>
+              <div class="cube-inner">
+                <div class="cube-face front"></div><div class="cube-face back"></div>
+                <div class="cube-face left"></div><div class="cube-face right"></div>
+                <div class="cube-face top"></div><div class="cube-face bottom"></div>
+              </div>
+              <div class="orbit-ring"><div class="orbit-dot"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <span class="tag">About RCI</span>
+            <h2>Where Academic Depth Meets <em>Industry Demand</em></h2>
+            <p class="body-large">RiskCube Institute is an industry-led training and deployment institute focused on digital, cyber, and AI risk. We exist because the gap between academic theory and operational capability is costing organisations at scale.</p>
+            <p class="body-large">Through partnerships with leading universities and live industry projects, RiskCube develops practitioners who can hit the ground running — analysing threats, designing controls, and advising boards from day one.</p>
+            <div class="about-pills">
+              <span class="pill">Cyber Risk</span><span class="pill">AI Governance</span><span class="pill">Digital Compliance</span><span class="pill">Operational Resilience</span><span class="pill">Third-Party Risk</span><span class="pill">Data Privacy</span>
+            </div>
+          </div>
+          <div class="about-visual reveal">
+            <div class="about-card-stack" id="cardStack">
+              <div class="stack-card"><div class="stack-card-label">Mission</div><div class="stack-card-title">Industry-led Risk Education</div><div class="stack-card-body">Connecting academic rigour with frontline practice to produce deployable risk professionals.</div></div>
+              <div class="stack-card"><div class="stack-card-label">Research</div><div class="stack-card-title">AI Governance &amp; Cyber Risk</div><div class="stack-card-body">Leading applied research at the intersection of emerging technology and organisational risk.</div></div>
+              <div class="stack-card"><div class="stack-card-label">Impact</div><div class="stack-card-title">Real-world Deployment</div><div class="stack-card-body">Our graduates are placed with regulated institutions and critical infrastructure operators worldwide.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tag">What We Offer</span>
+          <h2>Three Pillars of <em>Digital Risk</em> Excellence</h2>
+          <p class="section-sub">From talent development to strategic advisory — RiskCube supports organisations and professionals at every stage of the risk lifecycle.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <span class="service-num">01</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M22 10L12 5L2 10l10 5 10-5z"/><path d="M6 12.5v4.5c0 1.5 2.686 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 10v5"/></svg></div>
+            <h3>Academy</h3>
+            <p class="service-desc">Structured training programmes and intensive bootcamps that equip professionals with practical digital risk skills across cyber, AI, and compliance disciplines.</p>
+            <div class="service-tags"><span class="service-tag">Bootcamps</span><span class="service-tag">Certifications</span><span class="service-tag">Mentorship</span></div>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-num">02</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg></div>
+            <h3>Innovation &amp; Incubation</h3>
+            <p class="service-desc">Developing next-generation risk models, AI governance frameworks, and digital security research in collaboration with industry partners and academic institutions.</p>
+            <div class="service-tags"><span class="service-tag">AI Risk Models</span><span class="service-tag">Research</span><span class="service-tag">Frameworks</span></div>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-num">03</span>
+            <div class="service-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+            <h3>Advisory Services</h3>
+            <p class="service-desc">Helping organisations implement and embed risk frameworks — from NIST CSF and ISO 27001 to NIS2 and DORA — with pragmatic, outcome-focused guidance.</p>
+            <div class="service-tags"><span class="service-tag">NIST</span><span class="service-tag">ISO 27001</span><span class="service-tag">NIS2</span><span class="service-tag">DORA</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- PIPELINE -->
+    <section id="pipeline">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="tag">The RCI Model</span>
+          <h2>A Closed-Loop <em>Talent Pipeline</em></h2>
+          <p class="section-sub">Four interconnected stages that transform emerging professionals into deployed risk practitioners.</p>
+        </div>
+        <div class="pipeline-steps">
+          <div class="pipe-step reveal"><div class="pipe-icon"><span class="pipe-num">1</span><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><div class="pipe-label">Train</div><div class="pipe-desc">Academic curriculum fused with live industry case studies and hands-on labs.</div></div>
+          <div class="pipe-step reveal"><div class="pipe-icon"><span class="pipe-num">2</span><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><div class="pipe-label">Hire</div><div class="pipe-desc">Vetted talent placed with regulated firms, government bodies, and tech companies.</div></div>
+          <div class="pipe-step reveal"><div class="pipe-icon"><span class="pipe-num">3</span><svg viewBox="0 0 24 24" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="pipe-label">Innovate</div><div class="pipe-desc">Practitioners contribute to RiskCube research, refining models and advancing the field.</div></div>
+          <div class="pipe-step reveal"><div class="pipe-icon"><span class="pipe-num">4</span><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="pipe-label">Deploy</div><div class="pipe-desc">Senior practitioners lead transformation programmes and shape policy at sector level.</div></div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- COMMUNITY -->
+    <section id="community">
+      <div class="container">
+        <div class="community-layout">
+          <div class="reveal">
+            <span class="tag">Community</span>
+            <h2>A Network Built on <em>Shared Purpose</em></h2>
+            <p class="body-large">RiskCube serves a broad ecosystem of digital risk talent — from students exploring the field to seasoned practitioners shaping global standards. Everyone belongs here.</p>
+            <div style="margin-top:1.5rem">
+              <p style="font-size:0.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:500;margin-bottom:0.8rem">Active Sectors</p>
+              <div class="sector-grid">
+                <div class="sector-item">Financial Services</div><div class="sector-item">Government</div>
+                <div class="sector-item">Critical Infrastructure</div><div class="sector-item">Healthcare</div>
+                <div class="sector-item">Technology</div><div class="sector-item">Defence &amp; Security</div>
+              </div>
+            </div>
+          </div>
+          <div class="community-cards reveal">
+            <div class="comm-card"><div class="comm-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="comm-text"><h4>Students</h4><p>Gain practical skills, mentorship, and direct pathways into the digital risk profession through RiskCube's academic partnerships.</p></div></div>
+            <div class="comm-card"><div class="comm-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div class="comm-text"><h4>Early Career Professionals</h4><p>Accelerate your trajectory with structured upskilling, RCI certification, and access to our employer network.</p></div></div>
+            <div class="comm-card"><div class="comm-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div><div class="comm-text"><h4>Industry Practitioners</h4><p>Contribute to RiskCube research, lead knowledge sessions, and shape the next generation of digital risk talent.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="reveal">
+            <span class="tag">Get in Touch</span>
+            <h2>Register <em>Your Interest</em></h2>
+            <p class="body-large">Whether you're looking to train talent, hire practitioners, or explore a research partnership — we'd love to hear from you.</p>
+            <div class="contact-detail"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e8808d848487a8818c9ac681869b9c819c9d9c8d">[email&#160;protected]</a></div>
+            <div class="contact-detail"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>London, United Kingdom</div>
+            <div class="contact-left-actions">
+
+              <button class="tech-btn" id="btnRegister" onclick="handleLoginClick()" aria-label="Already Have an Account">
+                <div class="tech-btn-inner"><span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+                  <div class="tech-btn-label"><span class="tech-btn-eye">RCI Portal</span><span class="tech-btn-text">Already Have an Account</span></div>
+                  <div class="chevrons"><span class="chev"></span><span class="chev"></span><span class="chev"></span></div>
+                </div>
+              </button>
+
+              <div class="login-trigger-wrap" id="loginTriggerWrap">
+                <button class="tech-btn" id="btnLogin" onclick="handleLoginClick()" aria-label="Login">
+                  <div class="tech-btn-inner"><span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+                    <div class="tech-btn-label"><span class="tech-btn-eye">Existing account</span><span class="tech-btn-text">Login</span></div>
+                    <div class="login-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+                  </div>
+                </button>
+              </div>
+              <div class="login-card-wrap" id="loginCardWrap">
+                <div class="login-card">
+                  <div class="login-card-header"><div class="login-card-title">RCI <span>Secure</span> Login</div><button class="login-close-btn" onclick="closeLoginCard()">✕</button></div>
+                  <div class="login-field"><label for="l-email">Email Address</label><input type="email" id="l-email" placeholder="you@organisation.com" autocomplete="email"/></div>
+                   <div class="login-field password-field">
+  <label for="l-pass">Password</label>
+
+  <div class="password-wrap">
+    <input type="password" id="l-pass" placeholder="Enter password" autocomplete="current-password">
+
+    <span class="toggle-pass" onclick="togglePassword()">
+
+      <!-- Eye (visible password) -->
+      <svg id="eyeOpen" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2" style="display:none;">
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/>
+        <circle cx="12" cy="12" r="3"/>
+      </svg>
+
+      <!-- Eye Slash (hidden password) -->
+      <svg id="eyeClosed" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2">
+        <path d="M17.94 17.94A10.94 10.94 0 0112 20C5 20 1 12 1 12a21.86 21.86 0 015.06-6.94"/>
+        <path d="M9.9 4.24A10.94 10.94 0 0112 4c7 0 11 8 11 8a21.86 21.86 0 01-3.06 4.94"/>
+        <line x1="1" y1="1" x2="23" y2="23"/>
+      </svg>
+
+    </span>
+
+  </div>
+</div>
+                  <button class="login-submit">Access Portal →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap reveal" id="contactFormWrap">
+            <div class="run-top"></div><div class="run-bot"></div>
+            <div class="form-group"><label for="c-name">Full Name</label><input type="text" id="c-name" placeholder="Your full name" autocomplete="name"/></div>
+            <div class="form-group"><label for="c-email">Email Address</label><input type="email" id="c-email" placeholder="you@organisation.com" autocomplete="email"/></div>
+            <div class="form-group"><label for="c-msg">Message</label><textarea id="c-msg" placeholder="Tell us how we can help…"></textarea></div>
+            <button type="button" class="form-submit" id="formSubmitBtn" onclick="handleSubmit()">Register Interest →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+       <div class="footer-brand">
+          <img src="IDR-ICON-NO-BG.png" alt="RCI Logo">
+
+        </div>
+        <a href="/cdn-cgi/l/email-protection#92faf7fefefdd2fbf6e0bcfbfce1e6fbe6e7e6f7" class="footer-email"><span class="__cf_email__" data-cfemail="adc5c8c1c1c2edc4c9df83c4c3ded9c4d9d8d9c8">[email&#160;protected]</span></a>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-btn" aria-label="X"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M4 4l16 16M4 20L20 4"/></svg></a>
+          <a href="#" class="social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-copy">&copy; 2025 RiskCube Institute. All rights reserved.</div>
+    </div>
+  </footer>
+ 
+  <!-- ============================================================
+       CUBON CHATBOT — Rubik's Cube with facial expressions
+  ============================================================ -->
+  <div id="CUBON-wrapper">
+ 
+    <!-- Chat panel -->
+    <div class="CUBON-panel" id="CUBONPanel">
+      <div class="CUBON-panel-head">
+        <div class="sw-mini-scene">
+          <div class="sw-mini-cube">
+            <div class="sw-mini-face mf"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+            <div class="sw-mini-face mb"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+            <div class="sw-mini-face ml"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+            <div class="sw-mini-face mr"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+            <div class="sw-mini-face mt"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+            <div class="sw-mini-face mbo"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+          </div>
+        </div>
+        <div class="CUBON-head-info">
+          <div class="CUBON-head-name">CUBON</div>
+          <div class="CUBON-head-status">Online · RCI Assistant</div>
+        </div>
+        <button class="CUBON-x" onclick="CUBONClose()" aria-label="Close">✕</button>
+      </div>
+      <div class="CUBON-messages" id="CUBONMessages"></div>
+      <div class="CUBON-quick-btns" id="CUBONQuick">
+        <button class="sw-qbtn" onclick="CUBONQuick('Academy')">Academy</button>
+        <button class="sw-qbtn" onclick="CUBONQuick('Advisory')">Advisory</button>
+        <button class="sw-qbtn" onclick="CUBONQuick('Pipeline')">Pipeline</button>
+        <button class="sw-qbtn" onclick="CUBONQuick('Contact')">Contact</button>
+      </div>
+      <div class="CUBON-input-row">
+        <textarea class="CUBON-input" id="CUBONInput" placeholder="Ask me anything about RiskCube…" rows="1" onkeydown="CUBONKey(event)"></textarea>
+        <button class="CUBON-send" onclick="CUBONSend()" aria-label="Send"><svg viewBox="0 0 24 24" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+      </div>
+    </div>
+ 
+    <!-- Label -->
+    <div class="CUBON-label">CUBON</div>
+ 
+    <!-- The floating Rubik's cube -->
+    <div class="CUBON-scene" id="CUBONScene" onclick="CUBONToggle()" title="Chat with CUBON — RCI Assistant">
+      <div class="CUBON-notif" id="CUBONNotif"></div>
+      <div class="CUBON-cube happy" id="CUBONCube">
+ 
+        <!-- FRONT face with expression overlay -->
+        <div class="sw-face sf">
+          <div class="sw-tiles">
+            <div class="st2" style="background:#000000"></div><div class="st2" style="background:#FF6B1A"></div><div class="st2" style="background:#2a1a0a"></div>
+            <div class="st2" style="background:#FF6B1A"></div><div class="st2" style="background:#FF6B1A"></div><div class="st2" style="background:#FF6B1A"></div>
+            <div class="st2" style="background:#222"></div><div class="st2" style="background:#FF6B1A"></div><div class="st2" style="background:#2c1b12"></div>
+          </div>
+          <div class="sw-expr">
+            <div class="sw-brows"><div class="sw-brow"></div><div class="sw-brow"></div></div>
+            <div class="sw-eyes"><div class="sw-eye"></div><div class="sw-eye"></div></div>
+            <div class="sw-mouth"></div>
+          </div>
+        </div>
+ 
+        <div class="sw-face sb"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+        <div class="sw-face sl"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+        <div class="sw-face sr"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+        <div class="sw-face st"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+        <div class="sw-face sbo"><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div><div class="st2"></div></div>
+        </div>  <!-- closes CUBON-cube -->
+      </div>    <!-- closes CUBON-scene -->
+    </div>      <!-- closes CUBON-wrapper -->
+
+  <script src="script.js"></script>
+</body>
+</html>
