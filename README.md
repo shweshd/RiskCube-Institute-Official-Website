@@ -6,7 +6,7 @@ A fully responsive, multi-section corporate website built for **RiskCube Institu
 
 ## Live Demo
 
->https://shweshd.github.io/RiskCube-Institute-Official-Website/)
+>https://shweshd.github.io/RiskCube-Institute-Official-Website/
 
 ---
 
